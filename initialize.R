@@ -1,0 +1,10 @@
+library(lubridate)
+library(readxl)
+library(data.table)
+library(tidyverse)
+library(RSQLite)
+library(splitstackshape)
+library(sqldf)
+
+db_rolls <- dbConnect(SQLite(), "D:/rolls_standard.db")
+db_history <- dbConnect(SQLite(), "D:/history_standard.db")
